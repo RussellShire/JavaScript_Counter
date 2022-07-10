@@ -1,5 +1,5 @@
 :root {
-    --primary: #D81E5A;
+    --primary: #d81e5b;
     --secondary: #8A4fff;
     --grey: #AAA;
     --light: #EEE;
@@ -58,6 +58,56 @@ p {
     justify-content: center;
     align-items: center;
     margin: 0 - 0.5rem;
+}
 
+.counter-controls button {
+    margin: 0 0.5rem;
+}
 
+button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+
+    color: var(--primary);
+    font-size: 1.25rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+button span {
+    display: block;
+}
+
+button[data-action="reset"] {
+    color: #fff;
+    opacity: 0.5;
+}
+
+button[data-action="reset"]:hover {
+    opacity: 1;
+}
+
+.save {
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.save button {
+    color: var(--dark);
+}
+button:hover  {
+    transition: scale(1.1);
+}
+
+button:active {
+    transition: scale(1.2);
 }
