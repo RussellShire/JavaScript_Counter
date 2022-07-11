@@ -2,10 +2,10 @@
 const actions = Array.from(
     document.querySelectorAll('[data-action]'));
 
-// a variable to store the counter
+// a variable to store the counter, this will need to be applied to the html counter to appear on page
 let counter = 0;
 
-// assigns the counter variable to the counter-value element within the html 
+// assigns the counter variable to the counter-value element within the html so it appears on page
 document.querySelector(".counter-value").innerText = counter;
 
 // arrow function that loops through the actions array and creates results for each button
